@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+<ul type="square">
+<li>
+  <strong>Name:</strong>
+  <%= @tasklist.name %>
+  <strong>Description:</strong>
+  <%= @tasklist.description %>
+
+
+<%= link_to 'Edit', edit_tasklist_path(@tasklist) %> |
+<%= link_to 'Back', tasklists_path %>
+</li>
