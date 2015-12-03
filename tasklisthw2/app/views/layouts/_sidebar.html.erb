@@ -1,0 +1,8 @@
+  <div id="sidebar">
+    <h2>Tasklists</h2>
+    <ul>
+      <% @all_task_lists.each do | tasklist | %>
+        <li><%= link_to tasklist.name, tasklist %></li>
+      <% end %>
+    </ul>
+  </div>
